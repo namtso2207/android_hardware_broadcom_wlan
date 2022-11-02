@@ -2150,6 +2150,7 @@ public:
         result = requestResponse(request);
         if (result != WIFI_SUCCESS) {
             ALOGE("Failed to register trigger memory dump response; result = %d", result);
+            return WIFI_ERROR_NOT_SUPPORTED;
         }
         return result;
     }
